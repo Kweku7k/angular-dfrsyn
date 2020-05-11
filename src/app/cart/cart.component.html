@@ -9,7 +9,7 @@
   <span> {{ item.price | currency }}</span>
 </div>
 
-<form [formGroup]="checkoutForm" (ngSubmit="onSubmit(checkoutForm.value")>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
   <div>
     <label for = name>
       Name
@@ -25,3 +25,4 @@
   </div>
   <button class="button" type="submit">Purchase</button>
 </form> 
+
